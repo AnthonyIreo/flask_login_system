@@ -11,6 +11,14 @@
     <nav>
         <h1>Login System</h1>
     </nav>
-    
+
+    {% block content %}
+    <section id="login">
+        <h1>HELLO</h1>
+        <h2>{{ username }}</h2>
+    </section>
+    {% endblock %}
+
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript.js')}}"></script>
 </body>
 </html>
