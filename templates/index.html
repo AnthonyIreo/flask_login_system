@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
     <title>Login System</title>
 </head>
 <body>
@@ -13,10 +15,12 @@
     </nav>
 
     {% block content %}
-    <section id="login">
-        <h1>HELLO</h1>
-        <h2>{{ username }}</h2>
+    <section class="homepage">
+        <h1>Welcome</h1>
     </section>
+    <div>
+        <button>log in</button>
+    </div>
     {% endblock %}
 
     <script type="text/javascript" src="{{ url_for('static', filename='javascript.js')}}"></script>
