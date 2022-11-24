@@ -16,11 +16,11 @@
 
     {% block content %}
     <section class="homepage">
-        <h1>Welcome</h1>
+        <h1>Welcome to homepage</h1>
     </section>
-    <div>
-        <button>log in</button>
-    </div>
+    
+    <a href="{{url_for('login')}}">Login</a>
+    <a href="{{url_for('register')}}">Register</a>
     {% endblock %}
 
     <script type="text/javascript" src="{{ url_for('static', filename='javascript.js')}}"></script>
